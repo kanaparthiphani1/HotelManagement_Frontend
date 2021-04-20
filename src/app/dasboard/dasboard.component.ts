@@ -19,8 +19,8 @@ export class DasboardComponent implements OnInit {
   PieChart:any =[];
   ratingPerc!:number;
   ratings:any =[];
+  type:any="PieChart"
   title = 'Customer Rated above 3 are Satisfied and below 3 are not';
-  type = 'PieChart';
   chartData!:any[];
   columnNames = ['Browser', 'Percentage'];
   width = 550;

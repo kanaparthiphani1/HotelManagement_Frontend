@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { data } from 'jquery';
 import { Observable } from 'rxjs';
 import { Booking } from '../_services/booking';
 import { BookingService } from '../_services/booking.service';
+import { Feedback } from '../_services/Feedback';
 
 @Component({
   selector: 'app-booking-details',
@@ -12,7 +14,12 @@ import { BookingService } from '../_services/booking.service';
 export class BookingDetailsComponent implements OnInit {
 
   bookings!: Observable<Booking[]>;
-  userName!: String;
+  userName!: string;
+  feedback!:Feedback;
+  rating!:number;
+  comment!:string;
+  bookingId!:number;
+
 
   constructor(private bookingService: BookingService,
     private router: Router) {}
@@ -20,12 +27,16 @@ export class BookingDetailsComponent implements OnInit {
   ngOnInit() {
     this.reloadData();
     this.userName = <string>localStorage.getItem('username');
+
     }
 
   reloadData() {
     console.log("HIII");
 
     this.bookings = this.bookingService.getBooking(<string>localStorage.getItem('userId'));
+
+
+
   }
 
   deleteRoom(id: number) {
@@ -60,5 +71,23 @@ export class BookingDetailsComponent implements OnInit {
     }
 
   }
+
+  onChangerating($event:any){
+    this.rating = $event.target.value;
+
+  }
+
+  OnSubmitFeed(){
+    this.feedback = new Feedback(this.bookingId,this.userName,this.rating,this.comment,new Date().toDateString());
+    console.log(this.feedback);
+
+    this.bookingService.postFeed(this.feedback).subscribe(
+      data=>{
+        console.log("posted feed");
+
+      }
+    )
+  }
+
 
 }

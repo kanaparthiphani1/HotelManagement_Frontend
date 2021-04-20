@@ -3,6 +3,7 @@ export class Booking {
   HotelId!: number;
   roomId!: number;
   userName!:string;
+  feedGiven!:boolean;
   userId!:String;
   checkin!: Date;
   checkout!: Date;
