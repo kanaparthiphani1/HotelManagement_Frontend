@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Bookings</h2>
+  </div>
+  <div class="panel-body">
+
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>CheckIn</th>
+          <th>CheckOut</th>
+          <th>No. of guests</th>
+          <th>Approval / Reject</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of bookings |async">
+          <td *ngIf="book.approvalStatus === 'Pending'">{{ book.userName }}</td>
+          <td *ngIf="book.approvalStatus === 'Pending'">{{book.checkin}}</td>
+          <td *ngIf="book.approvalStatus === 'Pending'">{{book.checkout}}</td>
+          <td *ngIf="book.approvalStatus === 'Pending'">{{book.numOfGuests}}</td>
+          <td *ngIf="book.approvalStatus === 'Pending'"><button (click)="approve(book)" class="btn btn-success">Approve</button>
+            <button (click)="reject(book)" class="btn btn-danger">Reject</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<p>room-details works!</p>
+<h2>Room Details</h2> 
+
+<hr/>
+<div *ngIf="room">
+  <div>
+    <label><b>Room No: </b></label> {{room.roomNo}}
+  </div>
+  <div>
+    <label><b>Room type: </b></label> {{room.roomType}}
+  </div>
+  <div>
+    <label><b>Price: </b></label> {{room.price}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Room List</button><br>
+
+

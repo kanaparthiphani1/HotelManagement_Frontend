@@ -1,0 +1,60 @@
+<div class="container-fluid dashboard-cont pr-3 ">
+  <div class="row mt-4 mb-5">
+      <div class="col-12 col-md-4 dashboards p-2">
+        <div class="cardCont user-Cont">
+          <h1 class="head">Users Registered</h1>
+          <h1 class="number">{{this.userCount}}</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 dashboards1 p-2">
+        <div class="cardCont bookings-Cont">
+          <h1 class="head">Total Bookings</h1>
+          <h1 class="number">{{this.bookingCount}}</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 dashboards2 p-2">
+        <div class="cardCont employee-Cont">
+          <h1 class="head">Employees Count</h1>
+          <h1 class="number"> {{this.employeeCount}}</h1>
+        </div>
+      </div>
+
+    </div>
+
+  <div class="row">
+    <div class="col-12 feed-cont col-md-6">
+      <div class="inner-feed">
+      <h1 class="">Users feedBacks</h1>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>UserName</th>
+            <th>Feed Date</th>
+            <th>Rating</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody #myTable>
+          <tr *ngFor="let feed of feeds |async">
+            <td>{{feed.userName}}</td>
+            <td>{{feed.feedDate}}</td>
+            <td>{{feed.rating}}</td>
+            <td>{{feed.comments}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 feed-cont">
+      <div class="inner-rating-feed">
+      <google-chart #chart
+   [title]="title"
+   [type]="type"
+   [data]="chartData"
+   [width]="width"
+   [height]="height">
+</google-chart>
+</div>
+    </div>
+  </div>
+</div>

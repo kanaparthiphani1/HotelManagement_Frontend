@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
+.back{
+  background-color: #027db6;
+}
+
+.head{
+  font-family: Cairo;
+  background-color: rgba(255, 255, 255, 0.822);
+  width: 100px;
+  text-align: center;
+  color: #027db6;
+  border-radius: 10px;
+}
+
+.head:hover{
+  color: black;
+}

@@ -1,0 +1,28 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+<h3>Add Room</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Room No</label>
+      <input type="text" class="form-control" id="roomNo" required [(ngModel)]="room.roomNo" name="roomNo">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Room Type</label>
+      <input type="text" class="form-control" id="roomType" required [(ngModel)]="room.roomType" name="roomType">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Price</label>
+      <input type="number" class="form-control" id="Price" required [(ngModel)]="room.price" name="price">
+    </div>
+    <div class="text-right">
+    <button type="submit" class="btn btn-success">Submit</button>
+  </div></form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
+</div>

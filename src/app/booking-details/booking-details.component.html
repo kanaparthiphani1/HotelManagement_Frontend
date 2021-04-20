@@ -1,0 +1,44 @@
+<div class="container-fluid outer-cont p-0">
+  <div class="inner-cont d-flex flex-row justify-content-between align-items-center">
+  <div class="img-cont">
+    <img class="img-ele" src="https://image.freepik.com/free-vector/people-using-online-appointment-booking-app_74855-5556.jpg"/>
+  </div>
+  <div class="list-cont">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2 class="text-center">My Bookings</h2>
+      </div>
+      <div class="panel-body">
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>CheckIn</th>
+              <th>CheckOut</th>
+              <th>No. of guests</th>
+              <th>Approval Status</th>
+              <th>Cancel Booking</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="margin-top: 80px; padding-top: 10px;padding-bottom: 10px; margin-top: 80px;margin-bottom: 80px; border-radius: 10px;" [style] = "colorpicker(book.approvalStatus)" *ngFor="let book of bookings | async">
+              <td>{{ userName }}</td>
+              <td>{{book.checkin}}</td>
+              <td>{{book.checkout}}</td>
+              <td>{{book.numOfGuests}}</td>
+              <td>{{book.approvalStatus}}</td>
+              <td><button [disabled] = "book.approvalStatus === 'Approved' || book.approvalStatus === 'Rejected'" (click)="deleteRoom(book.roomId)" class="btn btn-danger">Cancel</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+

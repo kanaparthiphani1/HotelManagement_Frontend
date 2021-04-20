@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.dashboard-cont{
+  overflow: auto;
+  height: 100vh;
+}
+
+.dashboards{
+
+  min-height: 35vh;
+  margin-top: 20px;
+}
+
+.dashboards1{
+
+  min-height: 35vh;
+  margin-top: 20px;
+}
+
+.dashboards2{
+
+  min-height: 35vh;
+  margin-top: 20px;
+}
+
+.user-Cont{
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.144),rgba(0, 153, 255, 0.142),rgba(0, 153, 255, 0.342));
+
+}
+
+.bookings-Cont{
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.144), rgba(145, 216, 75, 0.142), rgba(145, 216, 75, 0.342));
+
+}
+.employee-Cont{
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.144),rgba(219, 209, 65, 0.142),rgba(219, 209, 65, 0.342));
+
+}
+
+.cardCont{
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Oswald;
+
+}
+
+.number{
+  font-size: 100px;
+}
+
+
+.border-ar{
+
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+}
+
+.feed-cont{
+
+
+  text-align: center;
+  font-family: Roboto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.inner-feed{
+  padding: 10px;
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.089),rgba(222, 109, 233, 0.096),rgba(235, 100, 205, 0.342));
+  border-radius: 30px;
+  overflow: auto;
+  height: 45vh;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+}
+
+.inner-rating-feed{
+  overflow: hidden;
+  border-radius: 30px;
+  height: 45vh;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+  padding-bottom: 20px;
+}

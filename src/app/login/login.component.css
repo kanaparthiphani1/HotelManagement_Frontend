@@ -1,0 +1,56 @@
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 400px !important;
+  padding: 40px 40px;
+}
+
+.color-filter{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(5, 135, 145, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #f7f7f7c9;
+
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  width: 50vw;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 20px 120px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.btn-backg{
+  background-color: #00B0FF;
+}
+
+.logIn-bg{
+  background-image: url('https://images.unsplash.com/photo-1576675784432-994941412b3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80');
+  background-size: cover;
+  height: 100vh;
+
+
+}

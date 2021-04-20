@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row mt-4 mb-5">
+      <div class="col-12 col-md-4 dashboards p-2">
+        <div class="cardCont user-Cont">
+          <h1 class="head">Users Registered</h1>
+          <h1 class="number">{{this.userCount}}</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 dashboards1 p-2">
+        <div class="cardCont bookings-Cont">
+          <h1 class="head">Total Bookings</h1>
+          <h1 class="number">{{this.bookingCount}}</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 dashboards2 p-2">
+        <div class="cardCont employee-Cont">
+          <h1 class="head">Employees Count</h1>
+          <h1 class="number"> {{this.employeeCount}}</h1>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mb-5">
+      <div class="col-12 p-4 text-center">
+        <div class="border-ar"><app-employee-list></app-employee-list></div>
+
+    </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-12 col-md-6 p-4">
+        <div class="border-ar">
+        <app-create-employee></app-create-employee>
+      </div>
+      </div>
+      <div class="col-12 col-md-6 p-4">
+        <div class="border-ar">
+        <app-add-room></app-add-room>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 text-center p-4">
+        <div class="border-ar">
+        <app-room-list></app-room-list>
+      </div></div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 text-center p-4">
+        <div class="border-ar">
+        <app-show-bookings></app-show-bookings>
+      </div></div>
+    </div>
+  </div>

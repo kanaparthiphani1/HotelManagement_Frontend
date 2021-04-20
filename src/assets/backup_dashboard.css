@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.dashboards{
+
+  min-height: 35vh;
+  margin-top: 20px;
+}
+
+.dashboards1{
+
+  min-height: 35vh;
+  margin-top: 20px;
+}
+
+.dashboards2{
+
+  min-height: 35vh;
+  margin-top: 20px;
+}
+
+.user-Cont{
+  background-color: rgba(0, 153, 255, 0.342);
+}
+
+.bookings-Cont{
+  background-color: rgba(145, 216, 75, 0.356);
+}
+.employee-Cont{
+  background-color: rgba(219, 209, 65, 0.295);
+}
+
+.cardCont{
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Oswald;
+
+}
+
+.number{
+  font-size: 100px;
+}
+
+
+.border-ar{
+
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+}

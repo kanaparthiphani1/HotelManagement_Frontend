@@ -1,0 +1,19 @@
+.inner-cont{
+  min-height: 92vh;
+
+}
+
+.list-cont{
+  align-self: flex-start;
+  margin-top: 55px;
+  overflow: auto;
+  padding: 30px;
+  background-color: rgba(133, 144, 150, 0.479);
+  height: 92vh;
+
+}
+.img-ele{
+  height: 50vh;
+
+}
+

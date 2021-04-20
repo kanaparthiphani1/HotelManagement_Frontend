@@ -1,0 +1,29 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Room List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Room No</th>
+            <th>Room Type</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let room of room | async">
+            <td>{{room.roomNo}}</td>
+            <td>{{room.roomType}}</td>
+            <td>{{room.price}}</td>
+            <td><button (click)="deleteRoom(room.id)" class="btn btn-danger">Delete</button>
+                <button (click)="updateRoom(room.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="roomDetails(room.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

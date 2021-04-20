@@ -1,0 +1,44 @@
+<div class="container-fluid bck-cont p-0">
+  <div class="inner-cont d-flex flex-row justify-content-between align-items-center">
+    <div class="booking-img-cont">
+      <img class="booking-img" src="../../assets/images/Hotel Booking-rafiki.png"/>
+
+    </div>
+    <div class="booking-cont">
+      <div class="booking-inner">
+      <div class="container">
+        <h3>Book Now</h3>
+        <div [hidden]="submitted" style="width: 400px;">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="CheckIn">CheckIn</label>
+              <input type="date" class="form-control" id="CheckIn" required [(ngModel)]="booking.checkin" name="CheckIn">
+            </div>
+
+            <div class="form-group">
+              <label for="CheckOut">CheckOut</label>
+              <input type="date" class="form-control" id="CheckOut" required [(ngModel)]="booking.checkout" name="CheckOut">
+            </div>
+
+            <div class="form-group">
+              <label for="guests">No. of Guests</label>
+              <input type="number" class="form-control" id="guests" required [(ngModel)]="booking.numOfGuests" name="guests">
+            </div>
+
+            <button type="submit" class="custom-button">Book Slot</button>
+          </form>
+        </div>
+
+        <div [hidden]="!submitted">
+          <h4>You submitted successfully!</h4>
+          <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+        </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,40 @@
+.inner-cont{
+  height: 100vh;
+}
+
+.booking-img{
+  height: 100vh;
+  width: 55vw;
+}
+
+.booking-cont{
+  background-color: rgba(62, 165, 230, 0.795);
+  padding: 20px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.bck-cont{
+  background-color: rgba(238, 239, 240, 0.336);
+}
+
+.booking-inner{
+
+  background-color: rgba(239, 249, 255, 0.493);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.custom-button {
+  color: white;
+  background-image: linear-gradient(#008ed0, #07587e);
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}

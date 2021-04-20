@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.car-cont{
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../../assets/images/svg_1.png);
+  background-size: cover;
+}
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.head-welcome{
+  color: white;
+  font-family: Bungee;
+  font-size: 60px;
+
+}
+
+.head-name{
+  color: white;
+  font-family: Bungee;
+  font-size: 75px;
+}
+
+.bg-imag{
+  height: 100vh;
+  background-size: cover;
+  z-index: 0;
+}
+
+
+.healthy-food-section {
+  background-color: white;
+}
+
+.healthy-food-section-img {
+  width: 370px;
+}
+
+.healthy-food-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.healthy-food-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.delivery-and-payment-section {
+
+  background-color: #f9fbfe7c;
+}
+
+.delivery-and-payment-section-img {
+  width: 370px;
+}
+
+.delivery-and-payment-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+
+.payment-card-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 28px;
+}
+
+.custom-button {
+  color: white;
+  background-image: linear-gradient(#008ed0, #07587e);
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+
+.wcu-section {
+  background-color: #f9fbfe;
+}
+
+.wcu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.wcu-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.wcu-card {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 16px;
+  max-height: 300px;
+  min-height: 300px;
+}
+
+.wcu-card-image {
+  width: 87px;
+  height: 90px;
+}
+
+.wcu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.wcu-card-description {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+
+.custom-shape-divider-bottom-1618610335 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1618610335 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1618610335 .shape-fill {
+  fill: #FFFFFF;
+}

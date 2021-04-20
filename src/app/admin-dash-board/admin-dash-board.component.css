@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+.menu-bar{
+  height: 100vh;
+  background-color: #027db6cb
+}
+.menu-item{
+  text-decoration: none;
+  padding: 10px;
+  color: aliceblue;
+  font-family: Oswald;
+}
+
+.menu-item:hover{
+  color: rgb(53, 54, 56);
+}
+
+.head{
+  color: aliceblue;
+  font-family: Oswald;
+
+}
+.menu-cont{
+  position: relative;
+}
